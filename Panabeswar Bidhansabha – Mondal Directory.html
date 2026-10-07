@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panabeswar Bidhansabha – Mondal Directory</title>
+<style>
+:root{--bg:#fffaf2;--card:#fff;--tx:#1a1f2b;--mu:#5f6b7a;--sf:#ff9933;--gr:#138808;--nv:#000080;--ac:#138808;--bd:#eadfcf;--chip:#eaf6e8;--chip2:#fff1e0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10141c;--card:#1a202b;--tx:#eef0f3;--mu:#9aa3af;--sf:#ffa94d;--gr:#3ccf4e;--nv:#9fb0ff;--ac:#3ccf4e;--bd:#2c3442;--chip:#14301a;--chip2:#38260f}}
+:root[data-theme="dark"]{--bg:#10141c;--card:#1a202b;--tx:#eef0f3;--mu:#9aa3af;--sf:#ffa94d;--gr:#3ccf4e;--nv:#9fb0ff;--ac:#3ccf4e;--bd:#2c3442;--chip:#14301a;--chip2:#38260f}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif}
+.flag{height:8px;background:linear-gradient(90deg,var(--sf) 0 33.3%,#fff 33.3% 66.6%,var(--gr) 66.6%);border-bottom:1px solid var(--bd)}
+header{max-width:900px;margin:auto;padding:18px 16px 8px;text-align:center}
+.ch{font-size:30px;color:var(--nv);line-height:1}
+h1{margin:4px 0 0;font-size:24px;background:linear-gradient(90deg,var(--sf),var(--nv) 50%,var(--gr));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mu);font-size:13px;margin-top:2px}
+#q{width:100%;margin-top:12px;padding:11px 14px;border:1.5px solid var(--sf);border-radius:12px;background:var(--card);color:var(--tx);font-size:15px;outline:none}
+#q:focus{border-color:var(--gr)}
+main{max-width:900px;margin:auto;padding:8px 16px 40px;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-top:5px solid;border-image:linear-gradient(90deg,var(--sf) 33%,#ccc 33% 66%,var(--gr) 66%) 1;border-radius:4px;padding:16px;cursor:pointer;transition:transform .1s;box-shadow:0 1px 4px rgba(0,0,128,.07)}
+.card:active{transform:scale(.98)}
+.tag{display:inline-block;background:var(--sf);color:#1a1f2b;font-weight:700;font-size:12px;padding:3px 10px;border-radius:99px}
+.pn{font-size:17px;font-weight:700;margin:10px 0 2px;color:var(--tx)}.role{color:var(--nv);font-size:12px;text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.ph{color:var(--gr);font-weight:700;margin-top:4px}.meta{color:var(--mu);font-size:12px;margin-top:10px}
+#ov{position:fixed;inset:0;background:rgba(0,0,40,.55);display:none;align-items:flex-end;justify-content:center;z-index:9}
+#ov.on{display:flex}
+.sheet{background:var(--bg);width:100%;max-width:760px;max-height:90%;overflow:auto;border-radius:20px 20px 0 0;padding:0 16px calc(24px + env(safe-area-inset-bottom,0px))}
+.sheet .flag{margin:0 -16px 14px}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.x{border:0;background:var(--card);color:var(--tx);width:34px;height:34px;border-radius:50%;font-size:18px;cursor:pointer;border:1px solid var(--bd)}
+.an{margin:18px 0 8px;font-size:12px;font-weight:700;color:var(--nv);letter-spacing:.05em;padding-left:8px;border-left:4px solid var(--sf)}
+.sk{background:var(--card);border:1px solid var(--bd);border-left:4px solid var(--gr);border-radius:10px;padding:12px;margin-bottom:10px}
+.skh{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.skn{font-weight:700}.skp{color:var(--nv);font-size:11px;font-weight:600;letter-spacing:.04em}
+a{color:var(--gr);text-decoration:none;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{background:var(--chip2);color:var(--tx);border:1px solid var(--sf);border-radius:8px;padding:3px 9px;font-size:13px;font-weight:600}
+.chip:nth-child(3n+2){background:var(--card);border-color:var(--nv)}
+.chip:nth-child(3n){background:var(--chip);border-color:var(--gr)}
+.bl{margin-top:10px;display:grid;gap:6px}
+.br{display:flex;justify-content:space-between;gap:8px;font-size:13px;border-top:1px solid var(--bd);padding-top:6px}
+.empty{color:var(--mu);font-size:13px;margin-top:8px}
+</style></head><body>
+<div class="flag"></div><header><div class="ch">☸</div><h1>Panabeswar Bidhansabha</h1><div class="sub">Mondal Directory · tap a card for Shaktikendra Pramukh &amp; booths</div><input id="q" type="search" placeholder="Search mondal, president, pramukh, booth no…"></header>
+<main id="list"></main>
+<div id="ov"><div class="sheet" id="sh"></div></div>
+<script>
+const RAW=`M|Mondal-1|MP-1|1234567890
+A|NABAGRAM
+S|BIBEK BAURI||115,116,117,118,119
+A|KUMARDIHI GRAM
+S|DILIP CHAKARBORTY||122,123,124,125,126,127
+A|TILABONI SHYMSUNDUR PUR, GGC
+S|RABILAL HEMRAM||128,129,130
+A|JOWAL BHANGA, AB PIT, LAL BANGLO
+S|KAGESH BADYAKAR||113,114,120,121
+A|BADYANATHPUR
+S|Buddhu Badhyakar|8145676764|
+S|Sanjay Badyakar|7318986016|
+S|Biswajit Mondol|8637597480|
+A|KENDRA
+S|LATU KARMAKAR|9647502442|1,2,3,4,5
+S|BISWANATH BAURI|6935404057|6,7,8,9
+S|KARUNA MONDAL|9614953687|10,11,12,13
+S|RABI SHANKAR GAUR|9749703855|14,19,20,21
+S|PRADIP SINGH|9635206375|15,16,17,18
+M|Mondal-2|MP-2|1234567890
+A|BAHULA
+S|KALESWAR PASWAN|8515963548|89,90,95,108
+S|TUSHAR KANTI PAL|9851198036|92,97,98,99
+S|RAJU SINGH|8670754475|88,91,93,94
+S|ABHIJIT BAURI|7905653724|109,110,111,112
+S|NITYANANDA BADYAKAR|6297576287|96,100,101,102
+S|CHANDAN CHOUHAN|8617663011|103,104,105,106,107
+A|CHHORA
+S|ANUP NANDI|8016633943|63,66,67,72
+S|BAPPI BAURI|8391089656|64,65,69,70,71
+S|PRAMANANDA GORAI|9732491131|83,84,85,87
+S|DHARMENDRA TURI|7679237357|77,79,80,56
+S|NIMAI DHANGAR|8116406586|68,78,81,82
+S|BABAI BAURI|9547598179|73,74,75,76
+A|HARIPUR
+S|SAHEBRAJ GOPE|9002940179|22,23,24,25,26
+S|SUJAY BAURI|8348872493|27,28,29,30,36,37
+S|KUNAL TANTY|7363830626|31,32,33,34,35
+M|Mondal-3|TARAK NATH DIBAR|9064848017
+A|ICHAPUR ANCHAL
+S|SOUMEN MUKHERJEE|7699723343|187~SUSHANTA MUKHERJEE~9647960957,188~SWARNA BAGDI~7797246599,189~BALAI GHOSH~8145568889,192~PRABIR BAURI~7501637338,190~SANKAR YADAV~9093820917,191~PASHUPATI SINGH~8918523546,193~CHITTA BAURI,194~SOILESH BAGDI
+S|KRISHNA DHIBAR|9732938768|195~MONESH RUIDAS~7679909032,196~SAGAR BADYAKAR~8927622487,197~JIBAN HAZRA~8617069760,198~UTTAM KARMAKAR~8927974549,199~BIDHAN GORAI~7384883897,200~UJJWAL SHOW,201,202
+S|ARGHYADEB HALDER|7908592619|203~~8370943896,204~TAPAS RUIDAS~9647673694
+S|NITYANANDA GORAI|8927974549|205~DINESH BAURI~7364978819,206~MONORATH HANSDA~8372994452
+S|AMIT KUMAR SINGH|9609736143|207~RABI SOREN,208~ARUP GHOSH~9093611147
+A|LAUDOHA ANCHAL
+S|SUPRIYO BANERJEE|9547079186|154~তপন কর্মকার,155,156~অমরনাথ বালিয়ালা~7319485456,157~শৈলমৃত বাউরি~9046905565,158~PARBATI DOM~8944830457
+S|আকাশ বাউরী|8101417389|159~বাউল মৃধা~9046873144,160~MADHU BADYAKAR~8653549777,161~গনেশ ঘোষ~9749370423,162~রোহিত কুমার,163~দীবাক মৃধা~8918354169,164
+S|BIJON SADHU|9609595135|165~GANESH RUIDAS~7872618204,166~RAJKISHORE HANSDA~7076201670,167~বিপ্লব রায়বা
+S|SUBHO MUKHERJEE|8145565793|168~BAMAPADA LOHAR~8337821088,170~RANJU RUIDAS,171~BIKASH RUIDAS~8967739842,169~TARAK BAURI,172~DHANARAJ SINGH~8597387799
+S|MANIK BAGDI|9883362725|173,174,175~BHAJAN GHOSH~9382134808
+A|JEMUA ANCHAL
+S|ARUP RUIDAS|7679664241|225~SIFAK KHANDAYET~7602800719,226~SAMIR BADYAKAR~7001968697,227~SANJIT BAGDI,228~সুবোধ রুইদাস~8972903818,229~মহাদেব বাউরী~8597487713,230~অমুল বাউরী~9832936885
+S|SUSHANTA PARAMANIK|9641740521|231~SUBHAS BHANDARI~9547363997,232~DAYAMOY LOHAR~9641638115,233~SAMARESH RUIDAS~9832727905,234~GOLOK PRAMANIK~9378302448,235~PRATIMA BAURI~6295956684,236~DEBAYAN CHAKRABORTY~8637886959
+S|DHARANI RAY|9933021666|237~RABI RUIDAS~8900573184,238,239~PROBODH SARKAR~8653720543
+M|Mondal-4|SAPTARSHI MONDAL|6295698474
+A|GOGLA 1
+S|||131,132,133,134
+A|GOGLA 2
+S|||138,139,140,141
+A|GOGLA 3
+S|GAJANAN METE|7908159830|145,151,152
+A|GOGLA 4
+S|SAYAN PAL|8617052613|135,136,137,153
+A|GOGLA 5
+S|BAIDYANATH DEY|7047267688|142,143,144,146
+A|GOGLA 6
+S|CHANDAN DAS|8016333700|147,148,149,150
+A|GOURBAZAR 1
+S|SHYAMAL MONDAL|7557845293|176,177,180,181
+A|GOURBAZAR 2
+S|LALTU BAURI|7001647753|178,179,184
+A|GOURBAZAR 3
+S|NAYAN GHOSH|7407996904|182,183,185,186
+A|PRATAPPUR 1
+S|RAJU HAZRA|7718224736|209,210,215,218
+A|PRATAPPUR 2
+S|SUVENDU SEN|6295025516|211,212,216,217,220,221
+A|PRATAPPUR 3
+S|PARTHA HATI|8927516906|213,214,219,222,223,224`;
+const D=[];let M,A;
+RAW.split("\n").forEach(l=>{const p=l.split("|");
+if(p[0]=="M"){M={n:p[1],pres:p[2],ph:p[3],a:[]};D.push(M)}
+else if(p[0]=="A"){A={n:p[1],s:[]};M.a.push(A)}
+else{A.s.push({n:p[1],ph:p[2],b:(p[3]||"").split(",").filter(Boolean).map(x=>{const t=x.split("~");return{no:t[0],n:t[1]||"",ph:t[2]||""}})})}});
+const e=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const tel=p=>p?`<a href="tel:${e(p)}">${e(p)}</a>`:"";
+const cnt=m=>{let s=0,b=0;m.a.forEach(a=>a.s.forEach(k=>{s++;b+=k.b.length}));return[s,b]};
+const hay=m=>(m.n+m.pres+m.ph+m.a.map(a=>a.n+a.s.map(k=>k.n+k.ph+k.b.map(x=>x.no+x.n+x.ph).join(" ")).join(" ")).join(" ")).toLowerCase();
+const list=document.getElementById("list");
+function render(f=""){
+list.innerHTML=D.map((m,i)=>({m,i})).filter(o=>hay(o.m).includes(f)).map(({m,i})=>{const[s,b]=cnt(m);
+return`<div class="card" data-i="${i}"><span class="tag">${e(m.n)}</span><div class="pn">${e(m.pres)}</div><div class="role">President</div><div class="ph">📞 ${e(m.ph)}</div><div class="meta">${s} Shaktikendra Pramukh · ${b} booths</div></div>`}).join("")||'<div class="empty">No results</div>'}
+function open_(i){const m=D[i];const[s,b]=cnt(m);
+document.getElementById("sh").innerHTML=`<div class="flag"></div><div class="top"><div><span class="tag">${e(m.n)}</span><div class="pn">${e(m.pres)}</div><div class="role">President</div><div class="ph">${tel(m.ph)}</div></div><button class="x" id="cl">✕</button></div>`+
+m.a.map(a=>`<div class="an">${e(a.n)}</div>`+a.s.map((k,j)=>{
+const plain=k.b.filter(x=>!x.n&&!x.ph),det=k.b.filter(x=>x.n||x.ph);
+return`<div class="sk"><div class="skh"><div><div class="skp">SHAKTIKENDRA PRAMUKH</div><div class="skn">${k.n?e(k.n):"— not assigned —"}</div></div><div>${tel(k.ph)}</div></div>`+
+(k.b.length?`<div class="chips">${k.b.map(x=>`<span class="chip">Booth ${e(x.no)}</span>`).join("")}</div>`:'<div class="empty">No booths listed</div>')+
+(det.length?`<div class="bl">${det.map(x=>`<div class="br"><span><b>${e(x.no)}</b> ${x.n?e(x.n):'<i style="color:var(--mu)">name n/a</i>'}</span>${tel(x.ph)}</div>`).join("")}</div>`:"")+`</div>`}).join("")).join("");
+document.getElementById("ov").classList.add("on");document.getElementById("cl").onclick=close_}
+function close_(){document.getElementById("ov").classList.remove("on")}
+list.addEventListener("click",ev=>{const c=ev.target.closest(".card");if(c)open_(+c.dataset.i)});
+document.getElementById("ov").addEventListener("click",ev=>{if(ev.target.id=="ov")close_()});
+document.getElementById("q").addEventListener("input",ev=>render(ev.target.value.trim().toLowerCase()));
+render();
+</script></body></html>
