@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panabeswar Bidhansabha – Mondal Directory</title>
+<style>
+:root{--bg:#fffaf2;--card:#fff;--tx:#1a1f2b;--mu:#5f6b7a;--sf:#ff9933;--gr:#138808;--nv:#000080;--ac:#138808;--bd:#eadfcf;--chip:#eaf6e8;--chip2:#fff1e0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10141c;--card:#1a202b;--tx:#eef0f3;--mu:#9aa3af;--sf:#ffa94d;--gr:#3ccf4e;--nv:#9fb0ff;--ac:#3ccf4e;--bd:#2c3442;--chip:#14301a;--chip2:#38260f}}
+:root[data-theme="dark"]{--bg:#10141c;--card:#1a202b;--tx:#eef0f3;--mu:#9aa3af;--sf:#ffa94d;--gr:#3ccf4e;--nv:#9fb0ff;--ac:#3ccf4e;--bd:#2c3442;--chip:#14301a;--chip2:#38260f}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif}
+.flag{height:8px;background:linear-gradient(90deg,var(--sf) 0 33.3%,#fff 33.3% 66.6%,var(--gr) 66.6%);border-bottom:1px solid var(--bd)}
+header{max-width:900px;margin:auto;padding:18px 16px 8px;text-align:center}
+.ch{font-size:30px;color:var(--nv);line-height:1}
+h1{margin:4px 0 0;font-size:24px;background:linear-gradient(90deg,var(--sf),var(--nv) 50%,var(--gr));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mu);font-size:13px;margin-top:2px}
+#q{width:100%;margin-top:12px;padding:11px 14px;border:1.5px solid var(--sf);border-radius:12px;background:var(--card);color:var(--tx);font-size:15px;outline:none}
+#q:focus{border-color:var(--gr)}
+main{max-width:900px;margin:auto;padding:8px 16px 40px;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-top:5px solid;border-image:linear-gradient(90deg,var(--sf) 33%,#ccc 33% 66%,var(--gr) 66%) 1;border-radius:4px;padding:16px;cursor:pointer;transition:transform .1s;box-shadow:0 1px 4px rgba(0,0,128,.07)}
+.card:active{transform:scale(.98)}
+.tag{display:inline-block;background:var(--sf);color:#1a1f2b;font-weight:700;font-size:12px;padding:3px 10px;border-radius:99px}
+.pn{font-size:17px;font-weight:700;margin:10px 0 2px;color:var(--tx)}.role{color:var(--nv);font-size:12px;text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.ph{color:var(--gr);font-weight:700;margin-top:4px}.meta{color:var(--mu);font-size:12px;margin-top:10px}
+#ov{position:fixed;inset:0;background:rgba(0,0,40,.55);display:none;align-items:flex-end;justify-content:center;z-index:9}
+#ov.on{display:flex}
+.sheet{background:var(--bg);width:100%;max-width:760px;max-height:90%;overflow:auto;border-radius:20px 20px 0 0;padding:0 16px calc(24px + env(safe-area-inset-bottom,0px))}
+.sheet .flag{margin:0 -16px 14px}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.x{border:0;background:var(--card);color:var(--tx);width:34px;height:34px;border-radius:50%;font-size:18px;cursor:pointer;border:1px solid var(--bd)}
+.an{margin:18px 0 8px;font-size:12px;font-weight:700;color:var(--nv);letter-spacing:.05em;padding-left:8px;border-left:4px solid var(--sf)}
+.sk{background:var(--card);border:1px solid var(--bd);border-left:4px solid var(--gr);border-radius:10px;padding:12px;margin-bottom:10px}
+.skh{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.skn{font-weight:700}.skp{color:var(--nv);font-size:11px;font-weight:600;letter-spacing:.04em}
+a{color:var(--gr);text-decoration:none;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{background:var(--chip2);color:var(--tx);border:1px solid var(--sf);border-radius:8px;padding:3px 9px;font-size:13px;font-weight:600}
+.chip:nth-child(3n+2){background:var(--card);border-color:var(--nv)}
+.chip:nth-child(3n){background:var(--chip);border-color:var(--gr)}
+.bl{margin-top:10px;display:grid;gap:6px}
+.br{display:flex;justify-content:space-between;gap:8px;font-size:13px;border-top:1px solid var(--bd);padding-top:6px}
+.empty{color:var(--mu);font-size:13px;margin-top:8px}
+.st{max-width:900px;margin:0 auto;padding:4px 16px;text-align:center;color:var(--mu);font-size:13px}.st button,.st label{display:inline-block;margin-top:8px;background:var(--sf);color:#1a1f2b;border:0;border-radius:10px;padding:9px 16px;font-weight:700;font-size:14px;cursor:pointer}.st .rl{background:none;color:var(--gr);padding:0;margin:0 0 0 8px;text-decoration:underline}</style></head><body>
+<div class="flag"></div><header><div class="ch">☸</div><h1>Panabeswar Bidhansabha</h1><div class="sub">Mondal Directory · tap a card for Shaktikendra Pramukh &amp; booths</div><input id="q" type="search" placeholder="Search mondal, president, pramukh, booth no…"></header>
+<div id="st" class="st"></div><main id="list"></main>
+<div id="ov"><div class="sheet" id="sh"></div></div>
+<script>
+const CSV_FILE="./data.csv";
+const FALLBACK=`Mondal,PRESIDENT,MOBILE,Anchal,Sl No,Shaktikendra Name,Shaktikendra Contact,Booth No,Booth Savapati Name,Booth Contact
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,1,SOUMEN MUKHERJEE,7699723343,187,SUSHANTA MUKHERJEE,9647960957
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,1,SOUMEN MUKHERJEE,7699723343,188,SWARNA BAGDI,7797246599
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,1,SOUMEN MUKHERJEE,7699723343,189,BALAI GHOSH,8145568889
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,1,SOUMEN MUKHERJEE,7699723343,192,PRABIR BAURI,7501637338
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,1,SOUMEN MUKHERJEE,7699723343,190,SANKAR YADAV,9093820917
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,1,SOUMEN MUKHERJEE,7699723343,191,PASHUPATI SINGH,8918523546
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,1,SOUMEN MUKHERJEE,7699723343,193,CHITTA BAURI,
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,1,SOUMEN MUKHERJEE,7699723343,194,SOILESH BAGDI,
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,2,KRISHNA DHIBAR,9732938768,195,MONESH RUIDAS,7679909032
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,2,KRISHNA DHIBAR,9732938768,196,SAGAR BADYAKAR,8927622487
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,2,KRISHNA DHIBAR,9732938768,197,JIBAN HAZRA,8617069760
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,2,KRISHNA DHIBAR,9732938768,198,UTTAM KARMAKAR,8927974549
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,2,KRISHNA DHIBAR,9732938768,199,BIDHAN GORAI,7384883897
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,2,KRISHNA DHIBAR,9732938768,200,UJJWAL SHOW,
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,2,KRISHNA DHIBAR,9732938768,201,,
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,2,KRISHNA DHIBAR,9732938768,202,,
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,3,ARGHYADEB HALDER,7908592619,203,,8370943896
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,3,ARGHYADEB HALDER,7908592619,204,TAPAS RUIDAS,9647673694
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,4,NITYANANDA GORAI,8927974549,205,DINESH BAURI,7364978819
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,4,NITYANANDA GORAI,8927974549,206,MONORATH HANSDA,8372994452
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,5,AMIT KUMAR SINGH,9609736143,207,RABI SOREN,
+Mondal-3,TARAK NATH DIBAR,9064848017,ICHAPUR ANCHAL,5,AMIT KUMAR SINGH,9609736143,208,ARUP GHOSH,9093611147
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,1,SUPRIYO BANERJEE,9547079186,154,তపন কর্মকার,
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,1,SUPRIYO BANERJEE,9547079186,155,,
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,1,SUPRIYO BANERJEE,9547079186,156,অমরনাথ বালিয়ালা,7319485456
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,1,SUPRIYO BANERJEE,9547079186,157,শৈলমৃত বাউরি,9046905565
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,1,SUPRIYO BANERJEE,9547079186,158,PARBATI DOM,8944830457
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,2,আকাশ বাউরী,8101417389,159,বাউল মৃধা,9046873144
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,2,আকাশ বাউরী,8101417389,160,MADHU BADYAKAR,8653549777
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,2,আকাশ বাউরী,8101417389,161,গনেশ ঘোষ,9749370423
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,2,আকাশ বাউরী,8101417389,162,রোহিত কুমার,
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,2,আকাশ বাউরী,8101417389,163,দীবাক মৃধা,8918354169
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,2,আকাশ বাউরী,8101417389,164,,
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,3,BIJON SADHU,9609595135,165,GANESH RUIDAS,7872618204
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,3,BIJON SADHU,9609595135,166,RAJKISHORE HANSDA,7076201670
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,3,BIJON SADHU,9609595135,167,বিপ্লব রায়বা,
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,4,SUBHO MUKHERJEE,8145565793,168,BAMAPADA LOHAR,8337821088
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,4,SUBHO MUKHERJEE,8145565793,170,RANJU RUIDAS,
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,4,SUBHO MUKHERJEE,8145565793,171,BIKASH RUIDAS,8967739842
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,4,SUBHO MUKHERJEE,8145565793,169,TARAK BAURI,
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,4,SUBHO MUKHERJEE,8145565793,172,DHANARAJ SINGH,8597387799
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,5,MANIK BAGDI,9883362725,173,,
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,5,MANIK BAGDI,9883362725,174,,
+Mondal-3,TARAK NATH DIBAR,9064848017,LAUDOHA ANCHAL,5,MANIK BAGDI,9883362725,175,BHAJAN GHOSH,9382134808
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,1,ARUP RUIDAS,7679664241,225,SIFAK KHANDAYET,7602800719
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,1,ARUP RUIDAS,7679664241,226,SAMIR BADYAKAR,7001968697
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,1,ARUP RUIDAS,7679664241,227,SANJIT BAGDI,
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,1,ARUP RUIDAS,7679664241,228,সুবোধ রুইদাস,8972903818
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,1,ARUP RUIDAS,7679664241,229,মহাদেব বাউরী,8597487713
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,1,ARUP RUIDAS,7679664241,230,অমুল বাউরী,9832936885
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,2,SUSHANTA PARAMANIK,9641740521,231,SUBHAS BHANDARI,9547363997
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,2,SUSHANTA PARAMANIK,9641740521,232,DAYAMOY LOHAR,9641638115
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,2,SUSHANTA PARAMANIK,9641740521,233,SAMARESH RUIDAS,9832727905
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,2,SUSHANTA PARAMANIK,9641740521,234,GOLOK PRAMANIK,9378302448
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,2,SUSHANTA PARAMANIK,9641740521,235,PRATIMA BAURI,6295956684
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,2,SUSHANTA PARAMANIK,9641740521,236,DEBAYAN CHAKRABORTY,8637886959
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,3,DHARANI RAY,9933021666,237,RABI RUIDAS,8900573184
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,3,DHARANI RAY,9933021666,238,,
+Mondal-3,TARAK NATH DIBAR,9064848017,JEMUA ANCHAL,3,DHARANI RAY,9933021666,239,PROBODH SARKAR,8653720543
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 1,1,,,131,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 1,1,,,132,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 1,1,,,133,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 1,1,,,134,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 2,2,,,138,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 2,2,,,139,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 2,2,,,140,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 2,2,,,141,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 3,3,GAJANAN METE,7908159830,145,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 3,3,GAJANAN METE,7908159830,151,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 3,3,GAJANAN METE,7908159830,152,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 4,4,SAYAN PAL,8617052613,135,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 4,4,SAYAN PAL,8617052613,136,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 4,4,SAYAN PAL,8617052613,137,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 4,4,SAYAN PAL,8617052613,153,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 5,5,BAIDYANATH DEY,7047267688,142,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 5,5,BAIDYANATH DEY,7047267688,143,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 5,5,BAIDYANATH DEY,7047267688,144,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 5,5,BAIDYANATH DEY,7047267688,146,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 6,6,CHANDAN DAS,8016333700,147,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 6,6,CHANDAN DAS,8016333700,148,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 6,6,CHANDAN DAS,8016333700,149,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOGLA 6,6,CHANDAN DAS,8016333700,150,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOURBAZAR 1,7,SHYAMAL MONDAL,7557845293,176,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOURBAZAR 1,7,SHYAMAL MONDAL,7557845293,177,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOURBAZAR 1,7,SHYAMAL MONDAL,7557845293,180,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOURBAZAR 1,7,SHYAMAL MONDAL,7557845293,181,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOURBAZAR 2,8,LALTU BAURI,7001647753,178,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOURBAZAR 2,8,LALTU BAURI,7001647753,179,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOURBAZAR 2,8,LALTU BAURI,7001647753,184,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOURBAZAR 3,9,NAYAN GHOSH,7407996904,182,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOURBAZAR 3,9,NAYAN GHOSH,7407996904,183,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOURBAZAR 3,9,NAYAN GHOSH,7407996904,185,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,GOURBAZAR 3,9,NAYAN GHOSH,7407996904,186,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 1,10,RAJU HAZRA,7718224736,209,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 1,10,RAJU HAZRA,7718224736,210,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 1,10,RAJU HAZRA,7718224736,215,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 1,10,RAJU HAZRA,7718224736,218,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 2,11,SUVENDU SEN,6295025516,211,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 2,11,SUVENDU SEN,6295025516,212,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 2,11,SUVENDU SEN,6295025516,216,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 2,11,SUVENDU SEN,6295025516,217,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 2,11,SUVENDU SEN,6295025516,220,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 2,11,SUVENDU SEN,6295025516,221,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 3,12,PARTHA HATI,8927516906,213,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 3,12,PARTHA HATI,8927516906,214,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 3,12,PARTHA HATI,8927516906,219,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 3,12,PARTHA HATI,8927516906,222,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 3,12,PARTHA HATI,8927516906,223,,
+Mondal-4,SAPTARSHI MONDAL,6295698474,PRATAPPUR 3,12,PARTHA HATI,8927516906,224,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-1,1,KALESWAR PASWAN,8515963548,89,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-1,1,KALESWAR PASWAN,8515963548,90,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-1,1,KALESWAR PASWAN,8515963548,95,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-1,1,KALESWAR PASWAN,8515963548,108,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-2,2,TUSHAR KANTI PAL,9851198036,92,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-2,2,TUSHAR KANTI PAL,9851198036,97,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-2,2,TUSHAR KANTI PAL,9851198036,98,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-2,2,TUSHAR KANTI PAL,9851198036,99,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-3,3,RAJU SINGH,8670754475,88,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-3,3,RAJU SINGH,8670754475,91,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-3,3,RAJU SINGH,8670754475,93,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-3,3,RAJU SINGH,8670754475,94,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-4,4,ABHIJIT BAURI,7905653724,109,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-4,4,ABHIJIT BAURI,7905653724,110,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-4,4,ABHIJIT BAURI,7905653724,111,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-4,4,ABHIJIT BAURI,7905653724,112,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-5,5,NITYANANDA BADYAKAR,6297576287,96,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-5,5,NITYANANDA BADYAKAR,6297576287,100,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-5,5,NITYANANDA BADYAKAR,6297576287,101,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-5,5,NITYANANDA BADYAKAR,6297576287,102,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-6,6,CHANDAN CHOUHAN,8617663011,103,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-6,6,CHANDAN CHOUHAN,8617663011,104,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-6,6,CHANDAN CHOUHAN,8617663011,105,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-6,6,CHANDAN CHOUHAN,8617663011,106,,
+Mondal-2,MP-2,1234567890,BAHULA SKP-6,6,CHANDAN CHOUHAN,8617663011,107,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-1,1,ANUP NANDI,8016633943,63,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-1,1,ANUP NANDI,8016633943,66,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-1,1,ANUP NANDI,8016633943,67,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-1,1,ANUP NANDI,8016633943,72,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-2,2,BAPPI BAURI,8391089656,64,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-2,2,BAPPI BAURI,8391089656,65,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-2,2,BAPPI BAURI,8391089656,69,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-2,2,BAPPI BAURI,8391089656,70,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-2,2,BAPPI BAURI,8391089656,71,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-3,3,PRAMANANDA GORAI,9732491131,83,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-3,3,PRAMANANDA GORAI,9732491131,84,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-3,3,PRAMANANDA GORAI,9732491131,85,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-3,3,PRAMANANDA GORAI,9732491131,87,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-4,4,DHARMENDRA TURI,7679237357,77,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-4,4,DHARMENDRA TURI,7679237357,79,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-4,4,DHARMENDRA TURI,7679237357,80,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-4,4,DHARMENDRA TURI,7679237357,56,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-5,5,NIMAI DHANGAR,8116406586,68,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-5,5,NIMAI DHANGAR,8116406586,78,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-5,5,NIMAI DHANGAR,8116406586,81,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-5,5,NIMAI DHANGAR,8116406586,82,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-6,6,BABAI BAURI,9547598179,73,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-6,6,BABAI BAURI,9547598179,74,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-6,6,BABAI BAURI,9547598179,75,,
+Mondal-2,MP-2,1234567890,CHHORA SKP-6,6,BABAI BAURI,9547598179,76,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-1,1,SAHEBRAJ GOPE,9002940179,22,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-1,1,SAHEBRAJ GOPE,9002940179,23,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-1,1,SAHEBRAJ GOPE,9002940179,24,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-1,1,SAHEBRAJ GOPE,9002940179,25,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-1,2,SAHEBRAJ GOPE,9002940179,26,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-2,2,SUJAY BAURI,8348872493,27,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-2,2,SUJAY BAURI,8348872493,28,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-2,2,SUJAY BAURI,8348872493,29,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-2,2,SUJAY BAURI,8348872493,30,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-2,2,SUJAY BAURI,8348872493,36,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-2,2,SUJAY BAURI,8348872493,37,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-3,3,KUNAL TANTY,7363830626,31,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-3,3,KUNAL TANTY,7363830626,32,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-3,3,KUNAL TANTY,7363830626,33,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-3,3,KUNAL TANTY,7363830626,34,,
+Mondal-2,MP-2,1234567890,HARIPUR SKP-3,3,KUNAL TANTY,7363830626,35,,
+Mondal-1,MP-1,1234567890,NABAGRAM,1,BIBEK BAURI,,115,,
+Mondal-1,MP-1,1234567890,NABAGRAM,1,BIBEK BAURI,,116,,
+Mondal-1,MP-1,1234567890,NABAGRAM,1,BIBEK BAURI,,117,,
+Mondal-1,MP-1,1234567890,NABAGRAM,1,BIBEK BAURI,,118,,
+Mondal-1,MP-1,1234567890,NABAGRAM,1,BIBEK BAURI,,119,,
+Mondal-1,MP-1,1234567890,KUMARDIHI GRAM,2,DILIP CHAKARBORTY,,122,,
+Mondal-1,MP-1,1234567890,KUMARDIHI GRAM,2,DILIP CHAKARBORTY,,123,,
+Mondal-1,MP-1,1234567890,KUMARDIHI GRAM,2,DILIP CHAKARBORTY,,124,,
+Mondal-1,MP-1,1234567890,KUMARDIHI GRAM,2,DILIP CHAKARBORTY,,125,,
+Mondal-1,MP-1,1234567890,KUMARDIHI GRAM,2,DILIP CHAKARBORTY,,126,,
+Mondal-1,MP-1,1234567890,KUMARDIHI GRAM,2,DILIP CHAKARBORTY,,127,,
+Mondal-1,MP-1,1234567890,"TILABONI SHYMSUNDUR PUR, GGC",3,RABILAL HEMRAM,,128,,
+Mondal-1,MP-1,1234567890,"TILABONI SHYMSUNDUR PUR, GGC",3,RABILAL HEMRAM,,129,,
+Mondal-1,MP-1,1234567890,"TILABONI SHYMSUNDUR PUR, GGC",3,RABILAL HEMRAM,,130,,
+Mondal-1,MP-1,1234567890,"JOWAL BHANGA, AB PIT, LAL BANGLO",4,KAGESH BADYAKAR,,113,,
+Mondal-1,MP-1,1234567890,"JOWAL BHANGA, AB PIT, LAL BANGLO",4,KAGESH BADYAKAR,,114,,
+Mondal-1,MP-1,1234567890,"JOWAL BHANGA, AB PIT, LAL BANGLO",4,KAGESH BADYAKAR,,120,,
+Mondal-1,MP-1,1234567890,"JOWAL BHANGA, AB PIT, LAL BANGLO",4,KAGESH BADYAKAR,,121,,
+Mondal-1,MP-1,1234567890,BADYANATHPUR,1,Buddhu Badhyakar,8145676764,,,
+Mondal-1,MP-1,1234567890,BADYANATHPUR,2,,,,,
+Mondal-1,MP-1,1234567890,BADYANATHPUR,3,Sanjay Badyakar,7318986016,,,
+Mondal-1,MP-1,1234567890,BADYANATHPUR,4,Biswajit Mondol,8637597480,,,
+Mondal-1,MP-1,1234567890,KENDRA,1,LATU KARMAKAR,9647502442,1,,
+Mondal-1,MP-1,1234567890,KENDRA,1,LATU KARMAKAR,9647502442,2,,
+Mondal-1,MP-1,1234567890,KENDRA,1,LATU KARMAKAR,9647502442,3,,
+Mondal-1,MP-1,1234567890,KENDRA,1,LATU KARMAKAR,9647502442,4,,
+Mondal-1,MP-1,1234567890,KENDRA,1,LATU KARMAKAR,9647502442,5,,
+Mondal-1,MP-1,1234567890,KENDRA,2,BISWANATH BAURI,6935404057,6,,
+Mondal-1,MP-1,1234567890,KENDRA,2,BISWANATH BAURI,6935404057,7,,
+Mondal-1,MP-1,1234567890,KENDRA,2,BISWANATH BAURI,6935404057,8,,
+Mondal-1,MP-1,1234567890,KENDRA,2,BISWANATH BAURI,6935404057,9,,
+Mondal-1,MP-1,1234567890,KENDRA,3,KARUNA MONDAL,9614953687,10,,
+Mondal-1,MP-1,1234567890,KENDRA,3,KARUNA MONDAL,9614953687,11,,
+Mondal-1,MP-1,1234567890,KENDRA,3,KARUNA MONDAL,9614953687,12,,
+Mondal-1,MP-1,1234567890,KENDRA,3,KARUNA MONDAL,9614953687,13,,
+Mondal-1,MP-1,1234567890,KENDRA,4,RABI SHANKAR GAUR,9749703855,14,,
+Mondal-1,MP-1,1234567890,KENDRA,4,RABI SHANKAR GAUR,9749703855,19,,
+Mondal-1,MP-1,1234567890,KENDRA,4,RABI SHANKAR GAUR,9749703855,20,,
+Mondal-1,MP-1,1234567890,KENDRA,4,RABI SHANKAR GAUR,9749703855,21,,
+Mondal-1,MP-1,1234567890,KENDRA,5,PRADIP SINGH,9635206375,15,,
+Mondal-1,MP-1,1234567890,KENDRA,5,PRADIP SINGH,9635206375,16,,
+Mondal-1,MP-1,1234567890,KENDRA,5,PRADIP SINGH,9635206375,17,,
+Mondal-1,MP-1,1234567890,KENDRA,5,PRADIP SINGH,9635206375,18,,`;
+const LS="mondal_csv_v1";
+let D=[];
+const e=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const tel=p=>p?`<a href="tel:${e(p)}">${e(p)}</a>`:"";
+const $=id=>document.getElementById(id);
+function parseCSV(t){
+ t=t.replace(/^\uFEFF/,"");const rows=[];let r=[],f="",q=false;
+ for(let i=0;i<t.length;i++){const c=t[i];
+  if(q){if(c=='"'){if(t[i+1]=='"'){f+='"';i++}else q=false}else f+=c}
+  else if(c=='"')q=true;
+  else if(c==","){r.push(f);f=""}
+  else if(c=="\n"||c=="\r"){if(c=="\r"&&t[i+1]=="\n")i++;r.push(f);rows.push(r);r=[];f=""}
+  else f+=c}
+ if(f!==""||r.length){r.push(f);rows.push(r)}
+ return rows}
+function build(text){
+ const rows=parseCSV(text);if(!rows.length)return[];
+ const H=rows[0].map(h=>h.trim().toLowerCase());
+ const ix=n=>H.indexOf(n);
+ const c={m:ix("mondal"),p:ix("president"),pm:ix("mobile"),a:ix("anchal"),sl:ix("sl no"),sn:ix("shaktikendra name"),sp:ix("shaktikendra contact"),bn:ix("booth no"),bs:ix("booth savapati name"),bc:ix("booth contact")};
+ const g=(r,k)=>c[k]<0?"":(r[c[k]]||"").trim();
+ const M=new Map();
+ rows.slice(1).forEach(r=>{
+  const mn=g(r,"m");if(!mn)return;
+  let m=M.get(mn);if(!m){m={n:mn,pres:g(r,"p"),ph:g(r,"pm"),a:[],am:new Map()};M.set(mn,m)}
+  if(!m.pres)m.pres=g(r,"p");if(!m.ph)m.ph=g(r,"pm");
+  const an=g(r,"a")||"—";
+  let a=m.am.get(an);if(!a){a={n:an,s:[],sm:new Map()};m.am.set(an,a);m.a.push(a)}
+  const sn=g(r,"sn"),sp=g(r,"sp");
+  const key=sn?sn+"|"+sp:"sl:"+g(r,"sl");
+  let k=a.sm.get(key);if(!k){k={n:sn,ph:sp,b:[]};a.sm.set(key,k);a.s.push(k)}
+  if(!k.ph)k.ph=sp;
+  const no=g(r,"bn");if(no)k.b.push({no,n:g(r,"bs"),ph:g(r,"bc")});
+ });
+ const out=[...M.values()];
+ out.forEach(m=>m.a.forEach(a=>a.s.forEach(k=>k.b.sort((x,y)=>(parseFloat(x.no)||0)-(parseFloat(y.no)||0)))));
+ out.sort((x,y)=>x.n.localeCompare(y.n,undefined,{numeric:true}));
+ return out}
+const cnt=m=>{let s=0,b=0;m.a.forEach(a=>a.s.forEach(k=>{if(k.n)s++;b+=k.b.length}));return[s,b]};
+const hay=m=>(m.n+m.pres+m.ph+m.a.map(a=>a.n+a.s.map(k=>k.n+k.ph+k.b.map(x=>x.no+x.n+x.ph).join(" ")).join(" ")).join(" ")).toLowerCase();
+const list=$("list");
+function render(f=""){
+ list.innerHTML=D.map((m,i)=>({m,i})).filter(o=>hay(o.m).includes(f)).map(({m,i})=>{const[s,b]=cnt(m);
+ return`<div class="card" data-i="${i}"><span class="tag">${e(m.n)}</span><div class="pn">${e(m.pres||"—")}</div><div class="role">President</div><div class="ph">📞 ${e(m.ph||"—")}</div><div class="meta">${s} Shaktikendra Pramukh · ${b} booths</div></div>`}).join("")||(D.length?'<div class="empty">No results</div>':"")}
+function open_(i){const m=D[i];
+ $("sh").innerHTML=`<div class="flag"></div><div class="top"><div><span class="tag">${e(m.n)}</span><div class="pn">${e(m.pres||"—")}</div><div class="role">President</div><div class="ph">${tel(m.ph)}</div></div><button class="x" id="cl">✕</button></div>`+
+ m.a.map(a=>`<div class="an">${e(a.n)}</div>`+a.s.map(k=>{
+  const det=k.b.filter(x=>x.n||x.ph);
+  return`<div class="sk"><div class="skh"><div><div class="skp">SHAKTIKENDRA PRAMUKH</div><div class="skn">${k.n?e(k.n):"— not assigned —"}</div></div><div>${tel(k.ph)}</div></div>`+
+  (k.b.length?`<div class="chips">${k.b.map(x=>`<span class="chip">Booth ${e(x.no)}</span>`).join("")}</div>`:'<div class="empty">No booths listed</div>')+
+  (det.length?`<div class="bl">${det.map(x=>`<div class="br"><span><b>${e(x.no)}</b> ${x.n?e(x.n):'<i style="color:var(--mu)">name n/a</i>'}</span>${tel(x.ph)}</div>`).join("")}</div>`:"")+`</div>`}).join("")).join("");
+ $("ov").classList.add("on");$("cl").onclick=close_}
+function close_(){$("ov").classList.remove("on")}
+function load(text,src,note){
+ D=build(text);render($("q").value.trim().toLowerCase());
+ $("st").innerHTML=`${D.length} mondals loaded from ${e(src)}${note?"<br>"+note:""} <button class="rl" id="rl">reload</button> <label class="rl" style="display:inline">choose file<input id="fi" type="file" accept=".csv,text/csv" hidden></label>`;
+ bind()}
+function bind(){
+ const fi=$("fi");if(fi)fi.onchange=()=>{const f=fi.files[0];if(f)f.text().then(t=>{try{localStorage.setItem(LS,JSON.stringify({n:f.name,t}))}catch(x){}load(t,f.name)})};
+ const rl=$("rl");if(rl)rl.onclick=fetchCSV}
+function fetchCSV(){
+ $("st").textContent="Loading "+CSV_FILE+"…";
+ fetch(CSV_FILE+"?t="+Date.now()).then(r=>{if(!r.ok)throw 0;return r.text()}).then(t=>{try{localStorage.setItem(LS,JSON.stringify({n:CSV_FILE,t}))}catch(x){}load(t,CSV_FILE)}).catch(()=>{
+  const hint="Browser blocks auto-reading data.csv from a local file. Host both files on a website for automatic updates, or use “choose file”.";
+  let c=null;try{c=JSON.parse(localStorage.getItem(LS))}catch(x){}
+  if(c&&c.t)load(c.t,"saved copy of "+c.n,hint);else load(FALLBACK,"built-in copy of data.csv",hint)})}
+list.addEventListener("click",ev=>{const c=ev.target.closest(".card");if(c)open_(+c.dataset.i)});
+$("ov").addEventListener("click",ev=>{if(ev.target.id=="ov")close_()});
+$("q").addEventListener("input",ev=>render(ev.target.value.trim().toLowerCase()));
+fetchCSV();
+</script></body></html>
